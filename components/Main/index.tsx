@@ -10,7 +10,7 @@ const MainStyled = styled.main<MainProps>`
   padding: 1rem;
   width: 100%;
   height: 100vh;
-`
+`;
 
 export default function Main({
   backgroundColor,

@@ -25,7 +25,7 @@ const InputStyled = styled.input<InputProps>`
   &:focus {
     border-width: 2px;
   }
-`
+`;
 
 export default function Input({
   type,
