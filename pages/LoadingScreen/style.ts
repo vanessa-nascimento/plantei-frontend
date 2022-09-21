@@ -9,6 +9,7 @@ export const ContainerLoading = styled.div`
 `;
 
 export const PrincipalImage = styled.div`
+  z-index: 1;
   align-self: center;
 `;
 
