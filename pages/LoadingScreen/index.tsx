@@ -1,5 +1,7 @@
 import Image from "../../node_modules/next/image";
 import Main from "../../components/Main";
+import taioba1 from '../../assets/icons/icone_taioba1.svg'
+import taioba2 from '../../assets/icons/icone_taioba2.svg'
 
 import { ContainerLoading, PrincipalImage, StartImage, EndImage } from "./style";
 
@@ -9,13 +11,13 @@ export default function LoadingScreen() {
     <Main backgroundColor="#FFE490" padding="0">
       <ContainerLoading>
         <StartImage>
-          <Image src="/icone_introduction2.svg" alt="Ícone plantei" width={249} height={407}/>
+          <Image src={taioba1} alt="Ícone plantei" layout="intrinsic" />
         </StartImage>
         <PrincipalImage>
-          <Image src="/icone_plantei2.svg" alt="Ícone plantei" width={309} height={259} />
+          <Image src="/icone_plantei2.svg" alt="Ícoåne plantei" width={309} height={259} layout="fixed" />
         </PrincipalImage>
         <EndImage>
-          <Image src="/icone_introduction.svg" alt="Ícone plantei" width={196} height={331}/>
+          <Image src={taioba2} alt="Ícone plantei" layout="intrinsic"/>
         </EndImage>
       </ContainerLoading>
     </Main>
