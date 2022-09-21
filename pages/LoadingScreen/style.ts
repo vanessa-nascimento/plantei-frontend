@@ -1,13 +1,24 @@
 import styled from "styled-components";
 
-export const LoginHeader = styled.header`
-  display: grid;
-  justify-content: center;
-  padding: 3rem 0 1rem 0;
+export const ContainerLoading = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-  & > h1 {
-    color: #217B51;
-    font-weight: 300;
-    font-size: 20px;
-  }
+export const PrincipalImage = styled.div`
+  position: relative;
+  align-self: center;
+`;
+
+export const StartImage = styled.div`
+  position: relative;
+  align-self: flex-start;
+`;
+
+export const EndImage = styled.div`
+  position: relative;
+  align-self: flex-end;
 `;

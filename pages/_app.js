@@ -6,17 +6,11 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
-    setTimeout(() => setLoading(false), 4000);
+    setTimeout(() => setLoading(true), 8000);
   }, []);
   return (
     <>
-      {!loading ? (
-        <React.Fragment>
-          <Login {...pageProps} />
-        </React.Fragment>
-      ) : (
-        <LoadingScreen />
-      )}
+      <LoadingScreen />
     </>
   );
 }
