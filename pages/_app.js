@@ -1,9 +1,9 @@
-import Login from './Login'
-import '../styles/globals.css'
+// import Login from './Login'
+// import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Login {...pageProps} />
+    <Component {...pageProps} />
   );
 }
 
