@@ -11,13 +11,13 @@ export default function LoadingScreen() {
     <Main backgroundColor="#FFE490" padding="0">
       <ContainerLoading>
         <StartImage>
-          <Image src={taioba1} alt="Ícone plantei" layout="intrinsic" />
+          <Image src={taioba1} alt="Ícone plantei" layout="fixed" />
         </StartImage>
         <PrincipalImage>
-          <Image src="/icone_plantei2.svg" alt="Ícoåne plantei" width={309} height={259} layout="fixed" />
+          <Image src="/icone_plantei2.svg" alt="Ícone plantei" width={300} height={259} layout="fill" />
         </PrincipalImage>
         <EndImage>
-          <Image src={taioba2} alt="Ícone plantei" layout="intrinsic"/>
+          <Image src={taioba2} alt="Ícone plantei" layout="fixed"/>
         </EndImage>
       </ContainerLoading>
     </Main>

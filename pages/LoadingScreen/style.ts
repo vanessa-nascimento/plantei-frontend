@@ -14,8 +14,10 @@ export const PrincipalImage = styled.div`
 
 export const StartImage = styled.div`
   align-self: flex-start;
+  float: left;
 `;
 
 export const EndImage = styled.div`
   align-self: flex-end;
+  float: right;
 `;
