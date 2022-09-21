@@ -1,4 +1,5 @@
-import LoadingScreen from "../src/components/LoadingScreen";
+import LoadingScreen from "./LoadingScreen";
+import React from "react";
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
