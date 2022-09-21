@@ -14,10 +14,10 @@ export default function LoadingScreen() {
           <Image src={taioba1} alt="Ícone plantei" layout="fixed" />
         </StartImage>
         <PrincipalImage>
-          <Image src="/icone_plantei2.svg" alt="Ícone plantei" width={300} height={259} layout="fill" />
+          <Image src="/icone_plantei2.svg" alt="Ícone plantei" width={300} height={259} layout="fill" z-index="1" />
         </PrincipalImage>
         <EndImage>
-          <Image src={taioba2} alt="Ícone plantei" layout="fixed"/>
+          <Image src={taioba2} alt="Ícone plantei" layout="fixed" />
         </EndImage>
       </ContainerLoading>
     </Main>
