@@ -25,7 +25,7 @@ export default function Login(props) {
   console.log(watch("email"), errors)
   
   return (
-    <Main backgroundColor="#E8F8E3">
+    <Main backgroundColor="#E8F8E3" padding="1">
       <LoginHeader>
         <Image src="/icone_plantei.svg" alt="Ícone plantei" width={95} height={95} />
         <h1>Que bom te ter por aqui!</h1>
