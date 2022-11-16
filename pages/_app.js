@@ -1,5 +1,6 @@
 import LoadingScreen from "./LoadingScreen";
 import Login from "./Login";
+import Profile from "./Profile";
 import React from "react";
 import '../styles/globals.css'
 
@@ -12,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {!loading ? (
         <React.Fragment>
-          <Login {...pageProps} />
+          <Profile {...pageProps} />
         </React.Fragment>
       ) : (
         <LoadingScreen />

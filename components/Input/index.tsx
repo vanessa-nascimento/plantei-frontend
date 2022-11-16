@@ -11,6 +11,7 @@ class InputProps {
   placeholder: string;
   border?: string;
   margin?: string;
+  color?: string;
   backgroundColor?: string;
 }
 
@@ -21,12 +22,16 @@ const InputStyled = styled.input<InputProps>`
   width: ${props => `${props.width}%`};
   margin: ${props => props.margin};
   outline: none;
+  color: ${props => props.color};
+  &::placeholder {
+    color: ${props => props.color};
+    opacity: 1; /* Firefox */
+  }
   background-color: ${props => props.backgroundColor};
   &:focus {
     border-width: 2px;
   }
 `;
-
 export default function Input({
   type,
   width,
@@ -37,6 +42,7 @@ export default function Input({
   placeholder,
   border,
   margin,
+  color,
   backgroundColor,
 }: InputProps) {
   
@@ -50,6 +56,7 @@ export default function Input({
       placeholder={placeholder}
       border={border || 'none'}
       margin={margin}
+      color={color}
       backgroundColor={backgroundColor || 'transparent'}
     />
   );
