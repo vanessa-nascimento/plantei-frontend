@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       {!loading ? (
         <React.Fragment>
-          <Profile {...pageProps} />
+          <Login {...pageProps} />
         </React.Fragment>
       ) : (
         <LoadingScreen />
