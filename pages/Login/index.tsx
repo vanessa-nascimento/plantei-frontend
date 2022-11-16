@@ -44,6 +44,7 @@ export default function Login(props) {
         <Input
           {...register("senha", { required: true })}
           placeholder="Senha"
+          type="password"
           border="1px solid #EDCA5C"
           width={100}
           margin="0 0 30px 0"

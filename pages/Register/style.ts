@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  padding: 15px;
+`;
+
+export const FormGroup = styled.div`
+  display: flex;
+`;
+
 export const RegisterHeader = styled.header`
   display: grid;
   justify-content: center;
@@ -7,9 +15,20 @@ export const RegisterHeader = styled.header`
 
   & > h1 {
     color: #217B51;
-    font-weight: 300;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
   }
+
+  & > h2 {
+    color: #9AC979;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0px;
+  }
+
 `;
 
 export const SubmitDiv = styled.div`
@@ -17,20 +36,7 @@ export const SubmitDiv = styled.div`
   justify-content: center;
 `;
 
-export const RegisterFooter = styled.footer`
-  display: flex;
-  justify-content: center;
-  color: #7B7878;
-  font-weight: 300;
-  padding-top: 3rem;
-
-  p {
-    line-height: 1.5rem;
-    width: 55%;
-    text-align: center;
-  }
-
-  a {
-    color: #8AC561;
-  }
+export const RegisterFooter = styled.div`
+  align-self: flex-end;
+  float: right;
 `;
