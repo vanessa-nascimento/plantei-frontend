@@ -6,6 +6,7 @@ import Button from "../../components/Button/index";
 import Main from "../../components/Main";
 
 import { LoginFooter, LoginHeader, SubmitDiv } from "./style";
+import Link from "next/link";
 
 type Inputs = {
   email: string,
@@ -43,6 +44,7 @@ export default function Login(props) {
         <Input
           {...register("senha", { required: true })}
           placeholder="Senha"
+          type="password"
           border="1px solid #EDCA5C"
           width={100}
           margin="0 0 30px 0"
@@ -63,7 +65,7 @@ export default function Login(props) {
       <LoginFooter>
         <p>
           {/* TODO: trocar esses href pelas rotas certas */}
-          <a href="https://www.w3schools.com/">Esqueceu a senha</a> ou ainda precisa de um <a href="https://www.w3schools.com/">novo cadastro</a>?
+          <a href="https://www.w3schools.com/">Esqueceu a senha</a> ou ainda precisa de um <Link href="/Register">novo cadastro</Link>?
           Fica tranquilo!
         </p>
       </LoginFooter>
