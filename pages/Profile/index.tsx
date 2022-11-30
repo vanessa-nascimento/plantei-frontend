@@ -2,8 +2,10 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import Image from "../../node_modules/next/image";
 
 import Input from "../../components/Input/index";
+import BottomMenu from "../../components/BottomMenu/index";
 import Button from "../../components/Button/index";
 import Main from "../../components/Main";
+
 
 import { LoginFooter, SpanInfo, LoginHeader, SubmitDiv, ImageProfile } from "../../styles/Profile";
 import ToggleSwitch from "../../components/ToggleSwitch";
@@ -70,7 +72,11 @@ export default function Profile(props) {
       </form>
 
       <LoginFooter>
-        Menu
+        <BottomMenu
+          backgroundColor="#FFFFFF"
+        >
+
+        </BottomMenu>
       </LoginFooter>
     </Main>
     );
