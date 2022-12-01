@@ -2,10 +2,12 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import Image from "../../node_modules/next/image";
 
 import Input from "../../components/Input/index";
+import BottomMenu from "../../components/BottomMenu/index";
 import Button from "../../components/Button/index";
 import Main from "../../components/Main";
 
-import { LoginFooter, SpanInfo, LoginHeader, SubmitDiv, ImageProfile } from "../../styles/Profile";
+
+import { SpanInfo, LoginHeader, SubmitDiv, ImageProfile } from "../../styles/Profile";
 import ToggleSwitch from "../../components/ToggleSwitch";
 
 type Inputs = {
@@ -68,10 +70,10 @@ export default function Profile(props) {
 
         <ToggleSwitch>Desejo receber notificações para cuidados com a horta.</ToggleSwitch>
       </form>
-
-      <LoginFooter>
-        Menu
-      </LoginFooter>
+      
+      <BottomMenu
+        backgroundColor="#FFFFFF"
+      />
     </Main>
     );
   }
