@@ -17,11 +17,21 @@ export const NovaPlantaHeader = styled.header`
   }
 
   & > h2 {
-    color: #9AC979;
+    color: #217B51;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 10px;
+    & > span {
+        color: #9AC979;
+    }
+  }
+
+  & > h3 {
+    text-align: center;
+    color: #217B51;
     font-weight: 400;
     font-size: 16px;
-    text-align: center;
-    margin-top: 0px;
   }
 
 `;

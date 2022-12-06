@@ -39,15 +39,15 @@ export default function Step2(props) {
               <NovaPlantaText>Selecione onde ela irá ser plantada:</NovaPlantaText>
               <DivCards>
                 <CardSelect>
-                  <Image src="/planta_vaso_plastico.png" alt="Ícone plantei" width={95} height={95} />
+                  <Image src="/planta_vaso_plastico.png" alt="Vaso de plástico" width={95} height={95} />
                   <p>Vaso de plástico</p>
                 </CardSelect>
                 <CardSelect>
-                  <Image src="/planta_vaso_garrafa.png" alt="Ícone plantei" width={95} height={95} />
+                  <Image src="/planta_vaso_garrafa.png" alt="Garrafa pet" width={95} height={95} />
                   <p>Garrafa pet</p>
                 </CardSelect>
                 <CardSelect>
-                  <Image src="/planta_vaso_ceramica.png" alt="Ícone plantei" width={95} height={95} />
+                  <Image src="/planta_vaso_ceramica.png" alt="Vaso de cerâmica" width={95} height={95} />
                   <p>Vaso de cerâmica</p>
                 </CardSelect>
               </DivCards>

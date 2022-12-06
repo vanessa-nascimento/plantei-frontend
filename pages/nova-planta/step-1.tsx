@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import Main from "../../components/Main";
 
-import { CardSelect, Content, ContentForm, ContentFormSM, DivCard, DivCards, NovaPlantaHeader, NovaPlantaText, SubmitDiv } from "../../styles/NovaPlanta";
+import { CardSelect, Content, ContentForm, ContentFormSM, DivCards, NovaPlantaHeader, NovaPlantaText, SubmitDiv } from "../../styles/NovaPlanta";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
 
@@ -50,15 +50,15 @@ export default function Step1(props) {
               <NovaPlantaText>Quanto espaço você tem para plantar?</NovaPlantaText>
               <DivCards>
                 <CardSelect>
-                  <Image src="/planta_espaco_pequeno.png" alt="Ícone plantei" width={95} height={95} />
+                  <Image src="/planta_espaco_pequeno.png" alt="Pequeno" width={95} height={95} />
                   <p>Pequeno</p>
                 </CardSelect>
                 <CardSelect>
-                  <Image src="/planta_espaco_medio.png" alt="Ícone plantei" width={95} height={95} />
+                  <Image src="/planta_espaco_medio.png" alt="Médio" width={95} height={95} />
                   <p>Médio</p>
                 </CardSelect>
                 <CardSelect>
-                  <Image src="/planta_espaco_grande.png" alt="Ícone plantei" width={95} height={95} />
+                  <Image src="/planta_espaco_grande.png" alt="Grande" width={95} height={95} />
                   <p>Grande</p>
                 </CardSelect>
               </DivCards>
