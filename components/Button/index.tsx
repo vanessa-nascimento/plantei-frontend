@@ -8,6 +8,7 @@ class ButtonProps {
   children: React.ReactNode;
   padding?: string;
   color?: string;
+  fontSize?: string;
 }
 
 const ButtonStyled = styled.button<ButtonProps>`
@@ -18,6 +19,7 @@ const ButtonStyled = styled.button<ButtonProps>`
   padding: ${props => props.padding || '10px 20px'};
   background-color: ${props => props.backgroundColor};
   color: ${props => props.color};
+  font-size: ${props => props.fontSize};
   cursor: pointer;
 
   &:hover {
@@ -32,6 +34,7 @@ export default function Button({
   children,
   padding,
   color,
+  fontSize
 }: ButtonProps) {
   return (
     <ButtonStyled
@@ -40,6 +43,7 @@ export default function Button({
       height={height}
       padding={padding}
       color={color}
+      fontSize={fontSize}
     >
       {children}
     </ButtonStyled>
