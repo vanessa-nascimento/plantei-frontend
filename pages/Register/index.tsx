@@ -8,6 +8,9 @@ import Main from "../../components/Main";
 import { Container, FormGroup, RegisterFooter, RegisterHeader, SubmitDiv } from "../../styles/Register";
 import Link from "next/link";
 
+import axios from 'axios';
+import { useEffect } from "react";
+
 type Inputs = {
   nome: string,
   sobrenome: string,

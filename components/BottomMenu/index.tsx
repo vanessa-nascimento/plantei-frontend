@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button/index";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 class BottomMenuProps {
   backgroundColor: string;
@@ -40,6 +41,7 @@ export default function BottomMenu({
   padding,
   color,
 }: BottomMenuProps) {
+  const router = useRouter()
   return (
     <BottomMenuStyled
       backgroundColor={backgroundColor}
@@ -52,6 +54,8 @@ export default function BottomMenu({
         backgroundColor="#FFFFFF"
         width="min-content"
         color="#ff2a00"
+        type="button"
+        onClick={() => router.push('/Login')}
       >
         <Image src="/navbar_home.svg" alt="Ícone plantei" width={60} height={60} layout="fixed" />
       </Button>
@@ -59,6 +63,8 @@ export default function BottomMenu({
         backgroundColor="#FFFFFF"
         width="min-content"
         color="#7B7878"
+        type="button"
+        onClick={() => router.push('/NovaPlanta')}
       >
         <Image src="/navbar_planta.svg" alt="Ícone plantei" width={60} height={60} layout="fixed" />
       </Button>
@@ -66,6 +72,8 @@ export default function BottomMenu({
         backgroundColor="#FFFFFF"
         width="min-content"
         color="#7B7878"
+        type="button"
+        onClick={() => router.push('/Profile')}
       >
         <Image color="#34AE62" src="/navbar_perfil.svg" alt="Ícone plantei" width={60} height={60} layout="fixed" />
       </Button>
@@ -73,6 +81,7 @@ export default function BottomMenu({
         backgroundColor="#FFFFFF"
         width="min-content"
         color="#7B7878"
+        disabled
       >
         <Image src="/navbar_feed.svg" alt="Ícone plantei" width={60} height={60} layout="fixed" />
       </Button>
