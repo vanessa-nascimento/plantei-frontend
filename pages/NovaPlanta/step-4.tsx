@@ -4,9 +4,11 @@ import Image from "next/image";
 
 import Main from "../../components/Main";
 
-import { CardSelect, Content, ContentForm, ContentFormSM, DivCards, NovaPlantaHeader, NovaPlantaText, ContentToPlant, SubmitDiv } from "../../styles/NovaPlanta";
+import { CardSelect, Content, ContentForm, ContentFormSM, DivCards, NovaPlantaHeader, NovaPlantaText, ContentToPlant, SubmitDiv, SubmitDivTwoButtons } from "../../styles/NovaPlanta";
 import Input from "../../components/Input";
 import Button from "../../components/Button";
+import { useRouter } from "next/router";
+import BottomMenu from "../../components/BottomMenu";
 
 type Inputs = {
   nome: string,
@@ -24,7 +26,7 @@ export default function Step4(props) {
   } = useForm<Inputs>();
   
   const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
-  
+  const router = useRouter();
   console.log(watch("email"), errors)
   
   return (
@@ -44,13 +46,14 @@ export default function Step4(props) {
                 <h3>Cuidados gerais com a planta escolhida</h3>
             </ContentToPlant>
             
-            <SubmitDiv>
+            <SubmitDivTwoButtons>
             <Button
                 backgroundColor="#F3F3F3"
                 width="min-content"
                 color="#217B51"
                 padding="20px 40px"
                 fontSize="18px"
+                onClick={() => router.push('/NovaPlanta/step-3')}
               >
                 Voltar
               </Button>
@@ -60,10 +63,12 @@ export default function Step4(props) {
                 color="#FFF"
                 padding="20px 40px"
                 fontSize="18px"
+                onClick={() => router.push('/NovaPlanta/step-5')}
               >
                 Continuar
               </Button>
-            </SubmitDiv>
+            </SubmitDivTwoButtons>
+            <BottomMenu backgroundColor="#FFF"></BottomMenu>
             </Content>
           </ContentFormSM>
     </Main>

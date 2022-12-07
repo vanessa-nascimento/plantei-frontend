@@ -79,7 +79,7 @@ export const NovaPlantaText = styled.h3`
     margin-top: 30px;
 `;
 
-export const SubmitDiv = styled.div`
+export const SubmitDivTwoButtons = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -90,6 +90,18 @@ export const SubmitDiv = styled.div`
     margin-top: 80px;
   }
 `;
+
+export const SubmitDiv = styled.div`
+  display: grid;
+  justify-content: center;
+  grid-gap: 10px;
+  margin-top: 40px;
+
+  &.contentsm {
+    margin-top: 80px;
+  }
+`;
+
 
 export const DivCards = styled.div`
     display: grid;
@@ -123,6 +135,7 @@ export const ContentToPlant = styled.div`
     border-radius: 20px;
     padding: 15px 10px;
     margin: 10px 0;
+    width: 100%;
 
     & > h3 {
         color: #838383;

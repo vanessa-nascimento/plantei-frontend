@@ -9,6 +9,9 @@ class ButtonProps {
   padding?: string;
   color?: string;
   fontSize?: string;
+  onClick?: () => void;
+  type?: 'submit' | 'button';
+  disabled?: boolean;
 }
 
 const ButtonStyled = styled.button<ButtonProps>`
@@ -34,7 +37,10 @@ export default function Button({
   children,
   padding,
   color,
-  fontSize
+  fontSize,
+  onClick,
+  type,
+  disabled,
 }: ButtonProps) {
   return (
     <ButtonStyled
@@ -44,6 +50,9 @@ export default function Button({
       padding={padding}
       color={color}
       fontSize={fontSize}
+      onClick={onClick}
+      type={type}
+      disabled={disabled}
     >
       {children}
     </ButtonStyled>

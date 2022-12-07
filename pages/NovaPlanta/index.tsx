@@ -9,8 +9,7 @@ export default function NovaPlanta(props) {
 
   return (
     <>
-      <Step5></Step5>
-      <BottomMenu backgroundColor="#FFF"></BottomMenu>
+      <Step1></Step1>
     </>
   );
 }
